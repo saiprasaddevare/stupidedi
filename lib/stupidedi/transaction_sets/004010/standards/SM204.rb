@@ -35,6 +35,7 @@ module Stupidedi
               s:: S5.use(10, r::Mandatory, d::RepeatCount.bounded(1)),
               s::L11.use(20, r::Optional,  d::RepeatCount.bounded(200)),
               s::G62.use(30, r::Optional,  d::RepeatCount.bounded(2)),
+              s::AT8.use(40, r::Optional,  d::RepeatCount.bounded(1)),
               s::LAD.use(50, r::Optional, d::RepeatCount.bounded(999)),
               s::NTE.use(65, r::Optional,  d::RepeatCount.bounded(20)),
 
