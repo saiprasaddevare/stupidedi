@@ -4057,6 +4057,7 @@ module Stupidedi
             "WTG" => "Waiting Time Authorized",
             "WTV" => "Weight Verification",
             "ZZZ" => "Mutually Defined"))
+        E153  = t::AN.new(:E153, "Special Handling Description"          , 2, 30)
         E154  = t::ID.new(:E154 , "Standard Point Location Code"         , 6, 9)
         E156  = t::ID.new(:E156  , "State or Province Code"              , 2, 2,
           s::CodeList.external("22"))
@@ -4129,6 +4130,8 @@ module Stupidedi
             "UP" => "UPC Consumer Packaging Code"))
         E254  = t::ID.new(:E254 , "Packing Group Code"                   , 1, 3)
         E267  = t::Nn.new(:E267 , "Net Explosive Quantity"               , 1, 10, 0)
+        E272  = t::ID.new(:E272,  "Hazardous Certification Code"         , 1, 1)
+        E273  = t::AN.new(:E273,  "Hazardous Certification Declaration " , 1, 25)
         E277  = t::ID.new(:E277 , "UN/NA Identification Code"            , 6, 6)
         E280  = t:: R.new(:E280 , "Exchange Rate"                        , 4, 10)
         E285  = t::AN.new(:E285 , "Depositor Order Number"               , 1, 22)

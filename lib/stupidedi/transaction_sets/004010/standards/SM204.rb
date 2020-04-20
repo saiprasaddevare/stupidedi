@@ -16,7 +16,9 @@ module Stupidedi
             s::L11.use( 80, r::Optional,  d::RepeatCount.bounded(100)),
             s::G62.use( 90, r::Optional,  d::RepeatCount.bounded(1)),
             s::MS3.use(100, r::Mandatory, d::RepeatCount.bounded(1)),
+            s::AT5.use(110, r::Optional,  d::RepeatCount.bounded(6)),
             s::PLD.use(120, r::Optional,  d::RepeatCount.bounded(1)),
+            s::LH6.use(125, r::Optional,  d::RepeatCount.bounded(6)),
             s::NTE.use(130, r::Optional,  d::RepeatCount.bounded(10)),
 
             d::LoopDef.build("0100", d::RepeatCount.bounded(5),
@@ -36,11 +38,14 @@ module Stupidedi
               s::L11.use(20, r::Optional,  d::RepeatCount.bounded(200)),
               s::G62.use(30, r::Optional,  d::RepeatCount.bounded(2)),
               s::AT8.use(40, r::Optional,  d::RepeatCount.bounded(1)),
-              s::LAD.use(50, r::Optional, d::RepeatCount.bounded(999)),
+              s::AT5.use(110, r::Optional, d::RepeatCount.bounded(6)),
+              s::PLD.use(120, r::Optional, d::RepeatCount.bounded(1)),
+              s::LAD.use(50, r::Optional,  d::RepeatCount.bounded(999)),
               s::NTE.use(65, r::Optional,  d::RepeatCount.bounded(20)),
 
               d::LoopDef.build("0310", d::RepeatCount.bounded(1),
                 s:: N1.use( 70, r::Mandatory, d::RepeatCount.bounded(1)),
+                s:: N2.use( 80, r::Mandatory, d::RepeatCount.bounded(1)),
                 s:: N3.use( 90, r::Optional,  d::RepeatCount.bounded(2)),
                 s:: N4.use(100, r::Optional,  d::RepeatCount.bounded(1)),
                 s::G61.use(120, r::Optional,  d::RepeatCount.bounded(3))),
@@ -61,6 +66,7 @@ module Stupidedi
 
               d::LoopDef.build("0350", d::RepeatCount.bounded(999),
                 s::OID.use(150, r::Optional, d::RepeatCount.bounded(1)),
+                s::LAD.use(180, r::Optional, d::RepeatCount.bounded(999)),
 
                 d::LoopDef.build("0360", d::RepeatCount.bounded(99),
                   s:: L5.use(190, r::Optional, d::RepeatCount.bounded(1)),
