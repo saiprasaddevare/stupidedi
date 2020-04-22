@@ -116,7 +116,7 @@ module Stupidedi
         autoload :W76, "stupidedi/versions/004010/segment_defs/W76"
         # This is new element
         autoload :AT5, "stupidedi/versions/004010/segment_defs/AT5"
-        autoload :AT5, "stupidedi/versions/004010/segment_defs/LH6"
+        autoload :LH6, "stupidedi/versions/004010/segment_defs/LH6"
       end
     end
   end

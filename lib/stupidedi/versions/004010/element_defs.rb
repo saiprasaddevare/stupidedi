@@ -4071,6 +4071,8 @@ module Stupidedi
         E254  = t::ID.new(:E254 , "Packing Group Code"                   , 1, 3)
         E257  = t::ID.new(:E257 , "Tariff Application Code"              , 1, 1)
         E267  = t::Nn.new(:E267 , "Net Explosive Quantity"               , 1, 10, 0)
+        E272  = t::ID.new(:E272,  "Hazardous Certification Code"         , 1, 1)
+        E273  = t::AN.new(:E273,  "Hazardous Certification Declaration " , 1, 25)
         E276  = t::AN.new(:E276 , "Special Charge Description"           , 2, 25,
           s::CodeList.build(
             "020" => "Address Correction",
