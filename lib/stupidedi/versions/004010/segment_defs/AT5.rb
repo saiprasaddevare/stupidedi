@@ -34,7 +34,8 @@ module Stupidedi
         e = ElementDefs
         r = ElementReqs
 
-        AT5 = s::SegmentDef.build(:AT5, "To identify Bill of Lading handling and service requirements ",
+        AT5 = s::SegmentDef.build(:AT5, "Bill Of Lading Handling Requirements",
+          "To identify Bill of Lading handling and service requirements ",
           e::E152 .simple_use(r::Mandatory,  s::RepeatCount.bounded(1)),
           e::E560 .simple_use(r::Optional,  s::RepeatCount.bounded(1)),
           e::E153 .simple_use(r::Optional,  s::RepeatCount.bounded(1)))
