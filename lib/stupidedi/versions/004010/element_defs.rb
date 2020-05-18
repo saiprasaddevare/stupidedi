@@ -5181,7 +5181,8 @@ module Stupidedi
         E558  = t::ID.new(:E558 , "Reservation Action Code"              , 1, 1,
           s::CodeList.build(
             "A" => "Reservation Accepted",
-            "D" => "Reservation Cancelled"))
+            "D" => "Reservation Cancelled",
+            "E" => "Reservation Declined"))
         E559  = t::ID.new(:E559 , "Agency Qualifier Code"                , 2, 2)
         E560  = t::ID.new(:E560 , "Special Services Code"                , 2, 10,
           s::CodeList.build(
