@@ -21,8 +21,8 @@ module Stupidedi
               s:: N4.use( 80, r::Optional , d::RepeatCount.bounded(1)),
               s::G62.use( 30, r::Mandatory,  d::RepeatCount.bounded(1))),
 
-            d::LoopDef.build("0150", d::RepeatCount.bounded(12),
-              s::MS3.use(120, r::Optional , d::RepeatCount.bounded(1))),
+            # d::LoopDef.build("0150", d::RepeatCount.bounded(12),
+            #   s::MS3.use(120, r::Optional , d::RepeatCount.bounded(1))),
 
             d::LoopDef.build("0200", d::RepeatCount.bounded(999999),
               s:: LX.use(130, r::Mandatory, d::RepeatCount.bounded(1)),
