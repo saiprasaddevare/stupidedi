@@ -293,18 +293,18 @@ module Stupidedi
             "UP" => "U.P.C. Consumer Package Code (1-5-5-1)",
             "GM" => "SSCC-18 and Application Identifier"))
         E90   = t:: R.new(:E90  , "Height"                               , 1, 8)
-        E91   = t::ID.new(:E91  , "Transportation Method/Type Code"      , 1, 2,
-          s::CodeList.build(
-            "A"  => "Air",
-            "H"  => "Customer Pickup",
-            "J"  => "Motor",
-            "M"  => "Motor (Common Carrier)",
-            "R"  => "Rail",
-            "S"  => "Ocean",
-            "T"  => "Best Way (Shippers Option)",
-            "U"  => "Private Parcel Service",
-            "X"  => "Intermodal (Piggyback)",
-            "LT" => "Less Than Trailer Load (LTL)"))
+        E91   = t::ID.new(:E91  , "Transportation Method/Type Code"      , 1, 2)
+          # s::CodeList.build(
+          #   "A"  => "Air",
+          #   "H"  => "Customer Pickup",
+          #   "J"  => "Motor",
+          #   "M"  => "Motor (Common Carrier)",
+          #   "R"  => "Rail",
+          #   "S"  => "Ocean",
+          #   "T"  => "Best Way (Shippers Option)",
+          #   "U"  => "Private Parcel Service",
+          #   "X"  => "Intermodal (Piggyback)",
+          #   "LT" => "Less Than Trailer Load (LTL)"))
         E92   = t::ID.new(:E92  , "Purchase Order Type Code"             , 2, 2,
           s::CodeList.build(
             "NE" => "New Order",
@@ -1938,9 +1938,9 @@ module Stupidedi
             "URL" => "Uniform Resource Locator",
             "WCS" => "Work Candidate Sequence Number",
             "WDR" => "Withdrawal Record"))
-        E133  = t::ID.new(:E133 , "Routing Sequence Code"                , 1, 2,
-          s::CodeList.build(
-            "B" => "Origin/Delivery Carrier (Any Mode)"))
+        E133  = t::ID.new(:E133 , "Routing Sequence Code"                , 1, 2)
+          # s::CodeList.build(
+          #   "B" => "Origin/Delivery Carrier (Any Mode)"))
         E140  = t::AN.new(:E140 , "Standard Carrier Alpha Code"          , 2, 4)
         E142  = t::AN.new(:E142 , "Application's Sender Code"            , 2, 15)
         E143  = t::ID.new(:E143 , "Transaction Set Identifier Number"    , 3, 3,
