@@ -9360,6 +9360,7 @@ module Stupidedi
             "CL" => "Trailer Closed Out",
             "CP" => "Completed Loading at Pick-up Location",
             "D1" => "Completed Unloading at Delivery Location",
+            "EP" => "Expense Payment",
             "I1" => "In-Gate",
             "J1" => "Delivered to Connecting Line",
             "K1" => "Arrived at Customs",
@@ -9379,7 +9380,9 @@ module Stupidedi
             "X5" => "Arrived at Delivery Location Loading Dock",
             "X6" => "En Route to Delivery Location",
             "X8" => "Arrived at Pick-up Location Loading Dock",
-            "XB" => "Shipment Acknowledged"))
+            "XB" => "Shipment Acknowledged",
+            "AB" => "Available to Ship - Billed Quantity",
+            "ZZ" => "Mutually Defined"))
         E1651 = t::ID.new(:E1651, "Shipment Status or Appointment Reason Code" , 2, 2,
           s::CodeList.build(
             "A1" => "Missed Delivery",
