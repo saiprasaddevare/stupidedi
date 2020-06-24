@@ -13,7 +13,7 @@ module Stupidedi
             s:: ST.use( 10, r::Mandatory, d::RepeatCount.bounded(1)),
             s::B10.use( 20, r::Mandatory, d::RepeatCount.bounded(1)),
             s::L11.use( 30, r::Optional , d::RepeatCount.bounded(300)),
-            s::MS3.use(100, r::Mandatory, d::RepeatCount.bounded(12)),
+            s::MS3.use(100, r::Optional, d::RepeatCount.bounded(12)),
 
             d::LoopDef.build("0100", d::RepeatCount.bounded(10),
               s:: N1.use( 50, r::Optional , d::RepeatCount.bounded(1)),
